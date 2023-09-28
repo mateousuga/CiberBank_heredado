@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ciberbank-exportado">
+    <output-path>$PROJECT_DIR$/out/artifacts/ciberbank_exportado</output-path>
+    <root id="archive" name="ciberbank-exportado.jar">
+      <element id="module-output" name="CiberBank_heredado" />
+    </root>
+  </artifact>
+</component>
