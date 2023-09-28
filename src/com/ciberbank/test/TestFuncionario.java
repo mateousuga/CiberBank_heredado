@@ -1,6 +1,10 @@
+package com.ciberbank.test;
+
+import com.ciberbank.modelo.Gerente;
+
 public class TestFuncionario {
     public static void main(String[] args) {
-        // Funcionario sergio = new Funcionario();
+        // com.ciberbank.modelo.Funcionario sergio = new com.ciberbank.modelo.Funcionario();
         Gerente gerente = new Gerente();
 
         gerente.setSalario(1500);

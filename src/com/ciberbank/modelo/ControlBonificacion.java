@@ -1,3 +1,5 @@
+package com.ciberbank.modelo;
+
 public class ControlBonificacion {
     private double suma;
     public double registrarSalario(Funcionario funcionario) {

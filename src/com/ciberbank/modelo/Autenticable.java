@@ -1,3 +1,5 @@
+package com.ciberbank.modelo;
+
 public interface Autenticable {
 
     public void setClave(String clave);

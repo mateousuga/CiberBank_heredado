@@ -1,3 +1,9 @@
+package com.ciberbank.test;
+
+import com.ciberbank.modelo.Administrador;
+import com.ciberbank.modelo.Gerente;
+import com.ciberbank.modelo.SistemaInterno;
+
 public class TestSistemaInterno {
     public static void main(String[] args) {
         SistemaInterno sistema = new SistemaInterno();

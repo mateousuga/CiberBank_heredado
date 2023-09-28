@@ -1,3 +1,5 @@
+package com.ciberbank.modelo;
+
 public class Administrador extends Funcionario implements Autenticable {
     private AutenticacionUtil util;
     public Administrador() {

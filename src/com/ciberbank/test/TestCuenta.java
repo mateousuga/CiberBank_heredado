@@ -1,3 +1,8 @@
+package com.ciberbank.test;
+
+import com.ciberbank.modelo.CuentaAhorro;
+import com.ciberbank.modelo.CuentaCorriente;
+
 public class TestCuenta {
     public static void main(String[] args) {
         CuentaCorriente cc = new CuentaCorriente(1, 1);

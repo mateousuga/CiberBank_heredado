@@ -1,3 +1,7 @@
+package com.ciberbank.test;
+
+import com.ciberbank.modelo.*;
+
 public class TestControlBonificacion {
     public static void main(String[] args) {
         Funcionario diego = new Contador();

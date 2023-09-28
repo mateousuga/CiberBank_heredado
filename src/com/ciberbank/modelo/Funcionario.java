@@ -1,3 +1,5 @@
+package com.ciberbank.modelo;
+
 public abstract class Funcionario {
     private String nombre;
     private String documento;

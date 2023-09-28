@@ -1,5 +1,8 @@
-// Entidad cuenta:
+package com.ciberbank.modelo;// Entidad cuenta:
 
+/**
+ * Cuenta va a crear nuevas instancias
+ */
 public abstract class Cuenta {
     protected double saldo;
     private int agencia = 1;
@@ -7,27 +10,40 @@ public abstract class Cuenta {
     private Cliente titular = new Cliente();
 
     public static int total;
+
+    /**
+     * Intancia una nueva cuenta sin parametros
+     *
+     */
     public Cuenta(int agencia, int numero) {
         this.agencia = agencia;
         this.numero = numero;
-        System.out.println("estoy creando una cuenta");
+        System.out.println("estoy creando una cuenta "+ numero);
         total ++;
     }
 
     // No retorna valor
     public abstract void depositar (double valor);
 
-    public boolean retirar (double valor) {
-        if (this.saldo >= valor) {
-            this.saldo -= valor;
-            return true;
-        } else {
-            return false;
+    /**
+     * Este metodo retira dinero de la cuenta y si ocurre un error devulve un excepcion
+     * @param valor
+     * @throws SaldoInsificienteException
+     */
+    public void retirar (double valor) throws SaldoInsificienteException {
+        if (this.saldo < valor) {
+            throw new SaldoInsificienteException("No tienes saldo");
         }
+        this.saldo -= valor;
+
     }
     public boolean transferir (double valor, Cuenta cuenta) {
         if (this.saldo >= valor) {
-            this.retirar(valor);
+            try {
+                this.retirar(valor);
+            } catch (SaldoInsificienteException e) {
+                e.printStackTrace();
+            }
             cuenta.depositar(valor);
             return true;
         }

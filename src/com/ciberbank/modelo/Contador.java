@@ -1,3 +1,5 @@
+package com.ciberbank.modelo;
+
 public class Contador extends Funcionario {
     @Override
     public double getBonificacion() {

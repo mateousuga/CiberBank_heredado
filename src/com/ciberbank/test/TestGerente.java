@@ -1,3 +1,8 @@
+package com.ciberbank.test;
+
+import com.ciberbank.modelo.Funcionario;
+import com.ciberbank.modelo.Gerente;
+
 public class TestGerente {
     public static void main(String[] args) {
         Funcionario gerente = new Gerente();

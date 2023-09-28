@@ -1,3 +1,5 @@
+package com.ciberbank.modelo;
+
 public class CuentaCorriente extends Cuenta {
     public CuentaCorriente(int agencia, int numero) {
         super(agencia, numero);
@@ -9,8 +11,8 @@ public class CuentaCorriente extends Cuenta {
     }
 
     @Override
-    public boolean retirar(double valor) {
+    public void retirar(double valor) throws SaldoInsificienteException {
         double comision = 0.2;
-        return super.retirar(valor + comision);
+        super.retirar(valor + comision);
     }
 }

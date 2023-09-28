@@ -1,3 +1,5 @@
+package com.ciberbank.modelo;
+
 public class Gerente extends Funcionario implements Autenticable {
 
     //sobre-escritura de metodo

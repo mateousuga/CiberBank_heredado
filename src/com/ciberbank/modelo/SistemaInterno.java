@@ -1,3 +1,5 @@
+package com.ciberbank.modelo;
+
 public class SistemaInterno {
     private String clave = "clave";
     public boolean autentica(Autenticable gerente) {
