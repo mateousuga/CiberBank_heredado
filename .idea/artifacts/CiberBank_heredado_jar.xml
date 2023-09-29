@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact name="CiberBank_heredado:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CiberBank_heredado_jar</output-path>
+    <root id="root">
+      <element id="archive" name="CiberBank_heredado.jar" />
+      <element id="module-output" name="CiberBank_heredado" />
+    </root>
+  </artifact>
+</component>
