@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class TestArrayList {
     public static void main(String[] args) {
-        ArrayList lista = new ArrayList();
+        ArrayList<Cuenta> lista = new ArrayList<>();
         Cuenta cc = new CuentaCorriente(313,424);
         Cuenta cc2 = new CuentaCorriente(13,543);
 
@@ -24,8 +24,8 @@ public class TestArrayList {
         for (int i = 0; i < lista.size(); i++) {
             System.out.println(lista.get(i));
         }
-        for (Object cuenta : lista){
-            System.out.println(lista.get(0));
+        for (Cuenta cuenta : lista){
+            System.out.println(cuenta);
         }
     }
 }
