@@ -23,24 +23,29 @@ public class Cliente implements Autenticable {
     }
 
     public void setNombre(String nombre) {
+
         this.nombre = nombre;
     }
 
     public String getTelefono() {
+
         return telefono;
     }
 
     public void setTelefono(String telefono) {
+
         this.telefono = telefono;
     }
 
     @Override
     public void setClave(String clave) {
+
         this.util.setClave(clave);
     }
 
     @Override
     public boolean iniciarSesion(String clave) {
+
         return this.util.iniciarSesion(clave);
     }
 }

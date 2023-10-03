@@ -5,13 +5,20 @@ import com.ciberbank.modelo.Cuenta;
 import com.ciberbank.modelo.CuentaCorriente;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Vector;
 
 public class TestArrayList {
     public static void main(String[] args) {
-        ArrayList<Cuenta> lista = new ArrayList<>();
+        //  List<Cliente> listaClientes = new LinkedList<>();
+        List<Cuenta> lista = new Vector<>();
+        // referencia     Objeto-> HEAP
         Cuenta cc = new CuentaCorriente(313,424);
         Cuenta cc2 = new CuentaCorriente(13,543);
+        Cuenta cc3 = new CuentaCorriente(313,424);
 
+        // [cc, cc2]
         lista.add(cc);
         lista.add(cc2);
 
@@ -26,6 +33,15 @@ public class TestArrayList {
         }
         for (Cuenta cuenta : lista){
             System.out.println(cuenta);
+        }
+        boolean contiene = lista.contains(cc);
+        // por referencia
+        if (contiene) {
+            System.out.println("Si");
+        }
+        if (cc.esIgual(cc3)) {
+            // por valores
+            System.out.println("Si, son iguales");
         }
     }
 }
